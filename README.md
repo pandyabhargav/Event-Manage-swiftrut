@@ -18,12 +18,12 @@ This is an Event Management application built using React for the frontend, Expr
 - **Styling**: Custom CSS
 
   ## Backend Setup
-  - **cd server**:
-  - **npm i**:
-  - **npm start**:
+  - **cd server**
+  - **npm i**
+  - **npm start**
  
   ## Frontend Setup
-  - **cd client**:
-  - **npm i**:
-  - **npm run dev**:
+  - **cd client**
+  - **npm i**
+  - **npm run dev**
   
