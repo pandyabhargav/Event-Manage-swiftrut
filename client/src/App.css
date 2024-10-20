@@ -1,0 +1,135 @@
+
+.eventbrite-navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .brand-logo img {
+    width: 120px;
+  }
+  
+  .nav-item , .brand-logo{
+    margin-right: 20px;
+    color: #f05537; 
+    font-weight: 500;
+    
+  }
+  a{
+    transition: none;
+  }
+  
+  .nav-item:hover {
+    color: #e0442d; 
+  }
+  
+  .login-btn, .signup-btn {
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 15px;
+  }
+  
+  .login-btn {
+    background-color: transparent;
+    color: #f05537; 
+    border: 2px solid #f05537;
+  }
+  
+  .signup-btn {
+    background-color: transparent;
+    color: #f05537; 
+    border: 2px solid #f05537;
+  }
+  
+  .signup-btn:hover, .login-btn:hover {
+    background-color: #f05537; 
+    color: white; 
+  }
+
+
+  .bground-round{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+  }
+  .bground-round i{
+    font-size: 50px;
+    color: #655876;
+  }
+  .bground-round:hover i{
+    color: #F15739;
+    transition: all 0.5s;
+  }
+  .bground-round:hover{
+    background-color: #FFE6BF;
+  }
+
+
+
+ 
+.head1{
+  color: #F15739;
+}
+
+  body {
+    background-color:#EFEBE9;
+    box-sizing: border-box;
+  }
+  h1, h2 {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+  }
+  h1{
+    font-size: 25px;
+  }
+  h2 {
+    color: #9E9E9E;
+    font-style: italic;
+    font-size: 15px;
+  }
+  .card {
+    background-color: #FFFFFF;
+    margin: 50px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #BDBDBD;
+  }
+  .card__image {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    height: 150px; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.card__image img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+}
+  .card__copy {
+    padding: 20px;
+  }
+  .card__copy h3{
+    font-size: 20px;
+  }
+
+  .bell-icon-btn {
+    background: transparent; 
+    border: none; 
+    color: #000; 
+    font-size: 24px;
+  }
+ 
+  .live-notification {
+    background-color: #f8f9fa; 
+    color: #333; 
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+    margin: 10px 0; 
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+  }
