@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +9,16 @@ const Login = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+
+  // Check if the user has visited this page before
+  useEffect(() => {
+    const hasVisited = localStorage.getItem('hasVisitedLogin');
+    if (!hasVisited) {
+      localStorage.setItem('hasVisitedLogin', 'true');
+      window.location.reload(); // Refresh the page on first visit
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,7 +30,6 @@ const Login = () => {
       setMessage(response.data.message);
 
       localStorage.setItem('token', response.data.token);
-
       navigate('/');
     } catch (error) {
       setError(error.response?.data?.error || 'Something went wrong!');
@@ -67,3 +75,4 @@ const Login = () => {
 };
 
 export default Login;
+
